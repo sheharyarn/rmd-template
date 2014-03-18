@@ -1,0 +1,32 @@
+development:
+  sessions:
+    default:
+      database: rmd_development
+      hosts:
+        - localhost:27017
+      options:
+        # safe: false
+        # consistency: :eventual
+        # max_retries: 30
+        # retry_interval: 1
+  # options:
+  #   identity_map_enabled: true
+
+test:
+  sessions:
+    default:
+      database: rmd_test
+      hosts:
+        - localhost:27017
+      options:
+        consistency: :strong
+        max_retries: 1
+        retry_interval: 0
+
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
+      options:
+        skip_version_check: true
+        safe: true
