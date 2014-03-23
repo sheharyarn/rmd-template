@@ -20,6 +20,7 @@ module RmdTemplate
     config.filter_parameters += [:password]
     config.assets.enabled = true
     config.assets.version = '1.0'
+    config.assets.initialize_on_precompile = false
     # config.autoload_paths += %W(#{config.root}/extras)
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
