@@ -9,9 +9,9 @@ group :assets do
 	gem 'coffee-rails', 	'~> 4.1.0'
 	gem 'uglifier', 		'>= 1.3.0'
 
-	# gem 'less-rails'
-	# gem 'twitter-bootswatch-rails'
-	# gem 'twitter-bootswatch-rails-helpers'
+	gem 'less-rails'
+	gem 'twitter-bootswatch-rails'
+	gem 'twitter-bootswatch-rails-helpers'
 end
 
 group :development, :test do
