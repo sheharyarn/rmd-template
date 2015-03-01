@@ -2,6 +2,9 @@ RmdTemplate::Application.routes.draw do
   # root :to => 'controller#index'
   # get  '/dashboard' => redirect('/')
 
+  # match '/404'                => 'errors#not_found',                           via: [:GET, :POST]
+  # match '/500'                => 'errors#exception',                           via: [:GET, :POST]
+
   # scope :controller do
   #   match '/'                 => 'controller#index',      as: :something1,		 via: :GET
   #   match '/:id'              => 'controller#view',       as: :something2,		 via: :GET
