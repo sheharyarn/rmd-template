@@ -33,6 +33,7 @@ gem 'turbolinks'
 gem 'therubyracer'
 
 gem 'awesome_print'
+gem 'quiet_assets'
 
 gem 'devise'
 gem 'mongoid'
